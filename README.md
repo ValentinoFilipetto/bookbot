@@ -44,8 +44,8 @@ The 'ô' was found 1 times
 ```
 
 To use it, create a `books` directory in the root of the project and add a book in a text file in that folder. You can get books from [Project Gutenberg](https://www.gutenberg.org/) for example. 
-Then, run 
+Then, run:
 
 ```bash
-python3 main.py
+python3 main.py <path_to_book>
 ```

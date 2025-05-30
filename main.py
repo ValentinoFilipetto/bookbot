@@ -1,8 +1,15 @@
 from stats import count_characters_occurrences, count_words, get_text, sort_occurrences_dict
+import sys
 
 def main():
-    frankestein_path = "books/frankenstein.txt"
-    print_report(frankestein_path)
+    COMMAND_ENTRIES = 2
+
+    if len(sys.argv) != COMMAND_ENTRIES:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    
+    # we use <path_to_book> in the command as path to book
+    print_report(sys.argv[1])
 
 # prints a nice report about a text
 def print_report(file_path):
